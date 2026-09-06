@@ -1,0 +1,18 @@
+{
+  "name": "deepseek-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node automate.js",
+    "test:one": "node automate.js --limit 1",
+    "test": "node --check automate.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.2.1",
+    "playwright": "^1.63.0"
+  }
+}

@@ -1,0 +1,605 @@
+{
+  "url": "https://chat.deepseek.com/a/chat/s/3b982c4e-44ed-4165-9f40-dc339deecd7d",
+  "row": {
+    "Engine Name": "BMW B37",
+    "Listing Title": "Used BMW B37 Engine — 1 Series F20 (116d) Hatchback 2015-2019",
+    "Meta Title": "B37 F20 116d Used",
+    "URL Slug": "b37/bmw-1-series-f20-116d-hatchback-2015",
+    "Compatible Models": "1 Series Hatchback (F20) 2015-2019 — 116d (116 hp)",
+    "Distinguishing Fact": "Longitudinal-mounted B37D15 for the F20/F21 1 Series — the core RWD application for this engine.",
+    "Application FAQ": "Will an F40 B37 fit my F20 1 Series? — No, F40 uses transverse mounting (B37C15) while F20 uses longitudinal (B37D15) — different sump, ancillaries, and mounts.",
+    "Used Price (£)": "£1,955",
+    "Recon Price (£)": "£2,875",
+    "SKU": "B37-USED-F20-116D-HATCH",
+    "Price Basis": "Group 1 base £1,700 × 1.15 = £1,955 (high output)"
+  },
+  "buttonCount": 21,
+  "buttons": [
+    {
+      "index": 0,
+      "visible": true,
+      "text": "",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--m ds-button--icon-relative-m ds-button--sizing-content d05a0287",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--m ds-button--icon-relative-m ds-button--sizing-content d05a0287",
+        "tabindex": "0",
+        "style": "--dsl-button-height: 34px;"
+      },
+      "rect": {
+        "x": 198,
+        "y": 24.5,
+        "width": 16,
+        "height": 16
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--m ds-button--icon-relative-m ds-button--sizing-content d05a0287\" tabindex=\"0\" style=\"--dsl-button-height: 34px;\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon ds-button__icon--last-child\"><div class=\"ds-icon\" style=\"font-size: inherit;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.894845 6.647401C11.894845 3.725463 9.534486 1.356779 6.623219 1.35657C3.711786 1.35657 1.351635 3.725338 1.351635 6.647401C1.351843 9.569296 3.711911 11.938273 6.623219 11.938273C9.534361 11.938064 11.894637 9.569171 11.894845 6.647401ZM13.245462 6.647401C13.245254 10.317935 10.280401 13.293613 6.623219 13.293821C2.9658"
+    },
+    {
+      "index": 1,
+      "visible": true,
+      "text": "",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--m ds-button--icon-relative-m ds-button--sizing-content _7d1f5e2",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--m ds-button--icon-relative-m ds-button--sizing-content _7d1f5e2",
+        "tabindex": "0",
+        "style": "--dsl-button-height: 34px;"
+      },
+      "rect": {
+        "x": 232,
+        "y": 24.5,
+        "width": 16,
+        "height": 16
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--m ds-button--icon-relative-m ds-button--sizing-content _7d1f5e2\" tabindex=\"0\" style=\"--dsl-button-height: 34px;\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon ds-button__icon--last-child\"><div class=\"ds-icon\" style=\"font-size: inherit;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9.67272 0.522841C10.8339 0.522841 11.76 0.522714 12.4963 0.602493C13.2453 0.683657 13.8789 0.854248 14.4264 1.25197C14.7504 1.48739 15.0355 1.77247 15.2709 2.0965C15.6686 2.64394 15.8392 3.27758 15.9204 4.02655C16.0002 4.7629 16 5.68895 16 6.85014V9.14986C16 10.3111 16.0002 11.2371 1"
+    },
+    {
+      "index": 2,
+      "visible": true,
+      "text": "",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--m ds-button--icon-relative-m ds-button--sizing-content _8023265",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--m ds-button--icon-relative-m ds-button--sizing-content _8023265",
+        "tabindex": "0",
+        "style": "--dsl-button-height: 22px; --dsl-button-icon-size: 12px;"
+      },
+      "rect": {
+        "x": 226,
+        "y": 139,
+        "width": 12,
+        "height": 12
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--m ds-button--icon-relative-m ds-button--sizing-content _8023265\" tabindex=\"0\" style=\"--dsl-button-height: 22px; --dsl-button-icon-size: 12px;\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon ds-button__icon--last-child\"><div class=\"ds-icon\" style=\"font-size: 12px; width: 12px; height: 12px;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"translate(0.9 1.4)\"><path d=\"M14.2004 9.73944V11.0402H7.40356V9.73944H14.2004Z\" fill=\"currentColor\"></path><path d=\"M14.2004 2.15491V3.45569H7.40356V2.15491H14.2004Z\" fill=\"currentColor\"></path><path d=\"M4.31055 10.3903C4.31055 9.61068 3.71825 8.9692 2.95898 8.89221"
+    },
+    {
+      "index": 3,
+      "visible": true,
+      "text": "",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l _2090548",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l _2090548",
+        "tabindex": "0"
+      },
+      "rect": {
+        "x": 216,
+        "y": 166,
+        "width": 28,
+        "height": 28
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l _2090548\" tabindex=\"0\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon ds-button__icon--last-child\"><div class=\"ds-icon\" style=\"font-size: inherit;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M4.55146 8.00001C4.55146 8.63513 4.03659 9.15001 3.40146 9.15001C2.76634 9.15001 2.25146 8.63513 2.25146 8.00001C2.25146 7.36488 2.76634 6.85001 3.40146 6.85001C4.03659 6.85001 4.55146 7.36488 4.55146 8.00001Z\" fill=\"currentColor\"></path><path d=\"M9.1476 8.00001C9.1476 8.63513 8.63273 9.15001 7.9976 9.15001C7.36248 9.15001 6.8476 8.63513 6.8476 8.00001C6.8476 7.36488 7.36248 6.85001"
+    },
+    {
+      "index": 106,
+      "visible": true,
+      "text": "",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--iconLabelPrimary ds-button--icon ds-button--capsule ds-button--l ds-button--icon-relative-m _57370c5 _5dedc1e",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--iconLabelPrimary ds-button--icon ds-button--capsule ds-button--l ds-button--icon-relative-m _57370c5 _5dedc1e",
+        "tabindex": "0",
+        "style": "--dsl-button-height: 34px;"
+      },
+      "rect": {
+        "x": 1391,
+        "y": 12,
+        "width": 34,
+        "height": 34
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--iconLabelPrimary ds-button--icon ds-button--capsule ds-button--l ds-button--icon-relative-m _57370c5 _5dedc1e\" tabindex=\"0\" style=\"--dsl-button-height: 34px;\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon ds-button__icon--last-child\"><div class=\"ds-icon\" style=\"font-size: inherit;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7.95889 1.52285C7.95888 0.826234 8.76055 0.467983 9.27669 0.875208L9.37524 0.967191L15.1317 7.18358C15.5582 7.64419 15.5582 8.35614 15.1317 8.81676L9.37524 15.0331C8.87034 15.578 7.95888 15.2205 7.95889 14.4775V10.8207C7.10614 10.8432 6.31361 10.9316 5.45468 11.2515C4.39484 11.6463 3.18248 12.413 1.64676 13.9425C1.4533 14.135 1.18329 14.169"
+    },
+    {
+      "index": 107,
+      "visible": true,
+      "text": "",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363",
+        "tabindex": "0"
+      },
+      "rect": {
+        "x": 1160.5,
+        "y": -3325,
+        "width": 28,
+        "height": 28
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363\" tabindex=\"0\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon ds-button__icon--last-child\"><div class=\"ds-cross-fade\"><div class=\"ds-icon\" style=\"font-size: inherit;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.14929 4.02032C7.11197 4.02032 7.87983 4.02016 8.49597 4.07598C9.12128 4.13269 9.65792 4.25188 10.1415 4.53106C10.7202 4.8653 11.2008 5.3459 11.535 5.92462C11.8142 6.40818 11.9334 6.94481 11.9901 7.57012C12.0459 8.18625 12.0458 8.95419 12.0458 9.9168C12.0458 10.8795 12.0459 11.6473 11.9901 12.2635C11.9334 12.8888 11.8142 13.4254 11.535 13.909C11.2008 14."
+    },
+    {
+      "index": 108,
+      "visible": true,
+      "text": "",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l d4910adc",
+      "attrs": {
+        "aria-disabled": "false",
+        "role": "button",
+        "class": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l d4910adc",
+        "tabindex": "0"
+      },
+      "rect": {
+        "x": 1198.5,
+        "y": -3325,
+        "width": 28,
+        "height": 28
+      },
+      "html": "<div aria-disabled=\"false\" role=\"button\" class=\"ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l d4910adc\" tabindex=\"0\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon ds-button__icon--last-child\"><div class=\"ds-icon\" style=\"font-size: inherit;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M9.94076 1.34942C10.7047 0.90231 11.6503 0.902415 12.4143 1.34942C12.7061 1.52015 12.9688 1.79118 13.3104 2.13284C13.6521 2.47448 13.9231 2.73721 14.0939 3.02894C14.5408 3.79294 14.5409 4.73856 14.0939 5.50251C13.9231 5.79415 13.652 6.05704 13.3104 6.39861L6.65932 13.0497C6.28068 13.4284 6.00695 13.7108 5.66543 13.9097C5.32391 14.1085 4.94315 14.2074 4.42705 14"
+    },
+    {
+      "index": 109,
+      "visible": true,
+      "text": "Copy",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width _64bb515",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width _64bb515",
+        "tabindex": "0"
+      },
+      "rect": {
+        "x": 1049.546875,
+        "y": 66,
+        "width": 69.65625,
+        "height": 28
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width _64bb515\" tabindex=\"0\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.14929 4.02032C7.11197 4.02032 7.87983 4.02016 8.49597 4.07598C9.12128 4.13269 9.65792 4.25188 10.1415 4.53106C10.7202 4.8653 11.2008 5.3459 11.535 5.92462C11.8142 6.40818 11.9334 6.94481 11.9901 7.57012C12.0459 8.18625 12.0458 8.95419 12.0458 9.9168C12.0458 10.8795 12.0459 11.6473 11.9901 12.2635C11.9334 12.8888 11.8142 13.4254 11.535 13.909C11.2008 14.4877 10.7202 14.9683 10.1415 15.3025C9.65792 15.5817 9.12128 15.7009 8.49597 "
+    },
+    {
+      "index": 110,
+      "visible": true,
+      "text": "Download",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width",
+        "tabindex": "0"
+      },
+      "rect": {
+        "x": 1121.203125,
+        "y": 66,
+        "width": 99.296875,
+        "height": 28
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width\" tabindex=\"0\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M15.3695 11.411L15.1234 12.8866C14.8869 14.3042 13.6603 15.3436 12.223 15.3436H3.77673C2.33958 15.3434 1.1128 14.3042 0.876343 12.8866L0.630249 11.411L2.05408 11.1747L2.29919 12.6493C2.41973 13.3713 3.04475 13.9001 3.77673 13.9003H12.223C12.9551 13.9002 13.58 13.3713 13.7006 12.6493L13.9457 11.1747L15.3695 11.411ZM8.72205 8.994C8.77717 8.93934 8.83792 8.88106 8.90271 8.81627L12.4828 5.23424L13.5043 6.25572L9.92224 9.8358C9.6395 10.1185 9.38"
+    },
+    {
+      "index": 111,
+      "visible": true,
+      "text": "Copy",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width _64bb515",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width _64bb515",
+        "tabindex": "0"
+      },
+      "rect": {
+        "x": 1049.546875,
+        "y": 609,
+        "width": 69.65625,
+        "height": 28
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width _64bb515\" tabindex=\"0\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M15.0498 3.92579L8.49512 12.3818C8.25774 12.6881 8.04517 12.9645 7.84668 13.1689C7.63957 13.3823 7.38732 13.5841 7.04492 13.6719C6.86373 13.7183 6.6757 13.7346 6.48926 13.7197C6.13666 13.6915 5.8528 13.5355 5.6123 13.3604C5.38201 13.1926 5.12573 12.9567 4.83984 12.6953L1.03125 9.21289L1.96875 8.1875L5.77734 11.6699C6.08684 11.9529 6.27773 12.1249 6.43066 12.2363C6.50183 12.2882 6.54699 12.3135 6.57324 12.3252C6.58525 12.3305 6.5926"
+    },
+    {
+      "index": 112,
+      "visible": true,
+      "text": "Download",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width",
+        "tabindex": "0"
+      },
+      "rect": {
+        "x": 1121.203125,
+        "y": 609,
+        "width": 99.296875,
+        "height": 28
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width\" tabindex=\"0\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M15.3695 11.411L15.1234 12.8866C14.8869 14.3042 13.6603 15.3436 12.223 15.3436H3.77673C2.33958 15.3434 1.1128 14.3042 0.876343 12.8866L0.630249 11.411L2.05408 11.1747L2.29919 12.6493C2.41973 13.3713 3.04475 13.9001 3.77673 13.9003H12.223C12.9551 13.9002 13.58 13.3713 13.7006 12.6493L13.9457 11.1747L15.3695 11.411ZM8.72205 8.994C8.77717 8.93934 8.83792 8.88106 8.90271 8.81627L12.4828 5.23424L13.5043 6.25572L9.92224 9.8358C9.6395 10.1185 9.38"
+    },
+    {
+      "index": 113,
+      "visible": true,
+      "text": "Copy",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width _64bb515",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width _64bb515",
+        "tabindex": "0"
+      },
+      "rect": {
+        "x": 1049.546875,
+        "y": 2299,
+        "width": 69.65625,
+        "height": 28
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width _64bb515\" tabindex=\"0\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.14929 4.02032C7.11197 4.02032 7.87983 4.02016 8.49597 4.07598C9.12128 4.13269 9.65792 4.25188 10.1415 4.53106C10.7202 4.8653 11.2008 5.3459 11.535 5.92462C11.8142 6.40818 11.9334 6.94481 11.9901 7.57012C12.0459 8.18625 12.0458 8.95419 12.0458 9.9168C12.0458 10.8795 12.0459 11.6473 11.9901 12.2635C11.9334 12.8888 11.8142 13.4254 11.535 13.909C11.2008 14.4877 10.7202 14.9683 10.1415 15.3025C9.65792 15.5817 9.12128 15.7009 8.49597 "
+    },
+    {
+      "index": 114,
+      "visible": true,
+      "text": "Download",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width",
+        "tabindex": "0"
+      },
+      "rect": {
+        "x": 1121.203125,
+        "y": 2299,
+        "width": 99.296875,
+        "height": 28
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--borderlessNeutral ds-button--borderless ds-button--capsule ds-button--xs ds-button--icon-relative-m ds-button--min-width\" tabindex=\"0\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M15.3695 11.411L15.1234 12.8866C14.8869 14.3042 13.6603 15.3436 12.223 15.3436H3.77673C2.33958 15.3434 1.1128 14.3042 0.876343 12.8866L0.630249 11.411L2.05408 11.1747L2.29919 12.6493C2.41973 13.3713 3.04475 13.9001 3.77673 13.9003H12.223C12.9551 13.9002 13.58 13.3713 13.7006 12.6493L13.9457 11.1747L15.3695 11.411ZM8.72205 8.994C8.77717 8.93934 8.83792 8.88106 8.90271 8.81627L12.4828 5.23424L13.5043 6.25572L9.92224 9.8358C9.6395 10.1185 9.38"
+    },
+    {
+      "index": 115,
+      "visible": true,
+      "text": "",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363",
+        "tabindex": "0"
+      },
+      "rect": {
+        "x": 468.5,
+        "y": 4458,
+        "width": 28,
+        "height": 28
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363\" tabindex=\"0\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon ds-button__icon--last-child\"><div class=\"ds-cross-fade\"><div class=\"ds-icon\" style=\"font-size: inherit;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.14929 4.02032C7.11197 4.02032 7.87983 4.02016 8.49597 4.07598C9.12128 4.13269 9.65792 4.25188 10.1415 4.53106C10.7202 4.8653 11.2008 5.3459 11.535 5.92462C11.8142 6.40818 11.9334 6.94481 11.9901 7.57012C12.0459 8.18625 12.0458 8.95419 12.0458 9.9168C12.0458 10.8795 12.0459 11.6473 11.9901 12.2635C11.9334 12.8888 11.8142 13.4254 11.535 13.909C11.2008 14."
+    },
+    {
+      "index": 116,
+      "visible": true,
+      "text": "",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363",
+      "attrs": {
+        "aria-disabled": "false",
+        "role": "button",
+        "class": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363",
+        "tabindex": "0"
+      },
+      "rect": {
+        "x": 506.5,
+        "y": 4458,
+        "width": 28,
+        "height": 28
+      },
+      "html": "<div aria-disabled=\"false\" role=\"button\" class=\"ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363\" tabindex=\"0\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon ds-button__icon--last-child\"><div class=\"ds-icon\" style=\"font-size: inherit;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7.92136 0.349152C10.3744 0.349234 12.5564 1.5052 13.9557 3.29894L15.1281 2.12759C15.3303 1.92546 15.6767 2.06943 15.6767 2.35538V5.53923C15.6766 5.71626 15.5329 5.85976 15.3559 5.86002H12.171C11.8854 5.8597 11.7426 5.51465 11.9443 5.31249L12.9641 4.29056C11.8237 2.74305 9.98908 1.74106 7.92136 1.74097C4.46436 1.74097 1.66233 4.543 1.66233 8C1.66233 11.457 4.46"
+    },
+    {
+      "index": 117,
+      "visible": true,
+      "text": "",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363",
+        "tabindex": "0"
+      },
+      "rect": {
+        "x": 544.5,
+        "y": 4458,
+        "width": 28,
+        "height": 28
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363\" tabindex=\"0\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon ds-button__icon--last-child\"><div class=\"ds-icon\" style=\"font-size: inherit;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8.27868 0.811572C8.81991 0.142194 9.79022 0.0421835 10.4538 0.557601L10.5823 0.669306L10.6066 0.693544L10.6097 0.695652L10.6392 0.725159C11.355 1.44679 11.6337 2.49468 11.3716 3.47669L11.3706 3.48091L11.3611 3.51674L11.3601 3.51885L10.889 5.22604C10.8796 5.25997 10.8707 5.29157 10.8627 5.32088C10.8934 5.32095 10.927 5.32194 10.9628 5.32194H11.9007C12.4264 5.32194 12.7831 5.319 13.0"
+    },
+    {
+      "index": 118,
+      "visible": true,
+      "text": "",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363",
+        "tabindex": "0"
+      },
+      "rect": {
+        "x": 582.5,
+        "y": 4458,
+        "width": 28,
+        "height": 28
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363\" tabindex=\"0\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon ds-button__icon--last-child\"><div class=\"ds-icon\" style=\"font-size: inherit;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7.72451 15.1086C7.18929 15.7705 6.22975 15.8694 5.57357 15.3597L5.44643 15.2492L5.42247 15.2253L5.41934 15.2232L5.39016 15.194C4.68239 14.4804 4.40679 13.4441 4.66589 12.473L4.66693 12.4689L4.67631 12.4334L4.67735 12.4314L5.14318 10.7431C5.15243 10.7096 5.1613 10.6783 5.16923 10.6493C5.13878 10.6493 5.10558 10.6483 5.07023 10.6483H4.14274C3.62288 10.6483 3.27015 10.6512 2.9912 10.6"
+    },
+    {
+      "index": 119,
+      "visible": true,
+      "text": "",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363",
+        "tabindex": "0"
+      },
+      "rect": {
+        "x": 620.5,
+        "y": 4458,
+        "width": 28,
+        "height": 28
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--xs ds-button--icon-relative-l db183363\" tabindex=\"0\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon ds-button__icon--last-child\"><div class=\"ds-icon\" style=\"font-size: inherit;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7.95889 1.52285C7.95888 0.826234 8.76055 0.467983 9.27669 0.875208L9.37524 0.967191L15.1317 7.18358C15.5582 7.64419 15.5582 8.35614 15.1317 8.81676L9.37524 15.0331C8.87034 15.578 7.95888 15.2205 7.95889 14.4775V10.8207C7.10614 10.8432 6.31361 10.9316 5.45468 11.2515C4.39484 11.6463 3.18248 12.413 1.64676 13.9425C1.4533 14.135 1.18329 14.1696 0.969086 14.0908C0.74748 14.0091 0.54730"
+    },
+    {
+      "index": 120,
+      "visible": true,
+      "text": "",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--outlinedNeutral ds-button--outlined ds-button--circle ds-button--m ds-button--icon-relative-m ds-button--floating",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--outlinedNeutral ds-button--outlined ds-button--circle ds-button--m ds-button--icon-relative-m ds-button--floating",
+        "tabindex": "0",
+        "style": "--dsl-button-color: var(--dsw-alias-button-floating-fill); --dsl-button-height: 34px; --dsl-button-color-hover: var(--dsw-alias-button-floating-hover); --dsl-button-icon-size: 14px;"
+      },
+      "rect": {
+        "x": 1192.5,
+        "y": 744,
+        "width": 34,
+        "height": 34
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--outlinedNeutral ds-button--outlined ds-button--circle ds-button--m ds-button--icon-relative-m ds-button--floating\" tabindex=\"0\" style=\"--dsl-button-color: var(--dsw-alias-button-floating-fill); --dsl-button-height: 34px; --dsl-button-color-hover: var(--dsw-alias-button-floating-hover); --dsl-button-icon-size: 14px;\"><div class=\"ds-button__background\"></div><div class=\"ds-button__border\"></div><div class=\"ds-button__icon ds-button__icon--last-child\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.8486 5.5L11.4238 5.92383L8.69727 8.65137C8.44157 8.90706 8.21562 9.13382 8.01172 9.29785C7.79912 9.46883 7.55595 9.61756 7.25 9.66602C7.08435 9.69222 6.91565 9.69222 6.75 9.66602C6.44405 9.617"
+    },
+    {
+      "index": 121,
+      "visible": true,
+      "text": "",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--iconLabelPrimary ds-button--icon ds-button--capsule ds-button--s ds-button--icon-relative-m f02f0e25",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--iconLabelPrimary ds-button--icon ds-button--capsule ds-button--s ds-button--icon-relative-m f02f0e25",
+        "tabindex": "0",
+        "style": "--dsl-button-height: 34px;"
+      },
+      "rect": {
+        "x": 1147.5,
+        "y": 875,
+        "width": 34,
+        "height": 34
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--iconLabelPrimary ds-button--icon ds-button--capsule ds-button--s ds-button--icon-relative-m f02f0e25\" tabindex=\"0\" style=\"--dsl-button-height: 34px;\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon ds-button__icon--last-child\"><div class=\"ds-icon\" style=\"font-size: inherit;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M5.5498 9.75V5H6.9502V9.75C6.9502 10.3299 7.4201 10.7998 8 10.7998C8.5799 10.7998 9.0498 10.3299 9.0498 9.75V4.5C9.0498 2.9536 7.7964 1.7002 6.25 1.7002C4.7036 1.7002 3.4502 2.9536 3.4502 4.5V9.75C3.4502 12.2629 5.4871 14.2998 8 14.2998C10.5129 14.2998 12.5498 12.2629 12.5498 9.75V4H13.9502V9.75C13.9502 13.0361 11.2861 15.7002 8 15.7002C4.71391 15.70"
+    },
+    {
+      "index": 122,
+      "visible": true,
+      "text": "",
+      "ariaLabel": "",
+      "title": "",
+      "className": "ds-button ds-button--primary ds-button--filled ds-button--circle ds-button--m ds-button--icon-relative-m ds-button--disabled _52c986b bd74640a",
+      "attrs": {
+        "role": "button",
+        "class": "ds-button ds-button--primary ds-button--filled ds-button--circle ds-button--m ds-button--icon-relative-m ds-button--disabled _52c986b bd74640a",
+        "style": "--dsl-button-height: 34px;"
+      },
+      "rect": {
+        "x": 1191.5,
+        "y": 875,
+        "width": 34,
+        "height": 34
+      },
+      "html": "<div role=\"button\" class=\"ds-button ds-button--primary ds-button--filled ds-button--circle ds-button--m ds-button--icon-relative-m ds-button--disabled _52c986b bd74640a\" style=\"--dsl-button-height: 34px;\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon ds-button__icon--last-child\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8.3125 0.981587C8.66767 1.0545 8.97902 1.20558 9.2627 1.43374C9.48724 1.61438 9.73029 1.85933 9.97949 2.10854L14.707 6.83608L13.293 8.25014L9 3.95717V15.0431H7V3.95717L2.70703 8.25014L1.29297 6.83608L6.02051 2.10854C6.26971 1.85933 6.51277 1.61438 6.7373 1.43374C6.97662 1.24126 7.28445 1.04542 7.6875 0.981587C7.8973 0.94841 8.1031 0.956564 8.3125 0.981587Z\" fill=\"currentColor\"></path></svg"
+    }
+  ],
+  "answerElements": [
+    {
+      "tag": "DIV",
+      "className": "cb86951c",
+      "attrs": {
+        "class": "cb86951c"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 950
+      },
+      "textStart": "New chat\nToday\nBMW B37 Listing\nGMC Listing Page Generation\nBMW B37 Listing Page\nBMW B37 Listing Page\nBMW B37 Engine Listing\nBMW B37 Listing Page\nBMW B37 Engine Listing\nBMW N47 E81 Listing Page\nBMW N47 Listing Page\nN47 E81 118d listing\nBMW N47 Listing\nBMW N47 Listing Page\nIncomplete row flag\nBMW N47 Engine Listing Page\n7 Days\nSkipped Images\n30 days\nCitroën DV6 Listing Page\nCitroen DV6 Listing Page\nAudi EA189 Listing Page\nEA113 Audi A3 Listing\nGMC Listing Page Generation\nToyota Supra B58 Listings\n",
+      "htmlStart": "<div class=\"cb86951c\"><div class=\"cddfb2ed\"></div><div class=\"c3ecdb44\"><div class=\"dc04ec1d\"><div class=\"b8812f16 a2f3d50e\"><div class=\"_262baab\"><div class=\"e066abb8\"><svg width=\"143\" height=\"23\" viewBox=\"0 0 143 23\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M78.6785 18.6823H77.1078V16.2472H78.6785C79.6513 16.2472 80.6342 16.0047 81.2672 15.3308C81.9009 14.6569 82.14 13.6232 82.14 12.59C82.14 11.5569 81.9109 10.5231 81.2672 9.84981C80.6247 9.17594 79.6513 8.93343 78.6785 8.93343C77.7056 8.93343 76.7228 9.17594 76.0886 9.84981C75.4549 10.5237 75.2158 11.5569 75.2158 12.59V22.5909H72.4605V6.50781H75.2158V7.53204H75.7209C75.7757 7.4689 75.8304 7.41525 75.8857 7.36161C76.5752 6.73244 77.6308 6.50781 78.6684 6.50781C80.2944 6.50781 81.9193 6.91236 82.9849 8.03549C84.0499 9.15861 84.4265 10.8835 84.4265 12.6001C84.4265 14.3166 84.0404 16.0326 82.9849 17.1647C81.9288 18.2967 80.2944 18.6834 78.6785 18.6834V18.6823Z\" fill=\"var(--dsw-alias-brand-primary)\"></path><path d=\"M36.7486 6.94097H38.3188V9.37609H36.7486C35.7753 9.37609 34.7929 9.61859 34.1593 10.2925C33.5257 10.9663 33.2871 12.0001 33.2871 13.0332C33.2871 14.0664 33.5167 15.0996 34.1593 15.7734C34.8019 16.4473 35.7753 16.6898 36.7486 16.6898C37.722 16.6898 38.7049 16.4473 39.3385 15.7734C39.9722 15.0996 40.2108 14.0664 40.2108 13.0332V3.02344H42.9655V19.116H40.2108V18.0918H39.7057C39.6503 18.1544 39.5956 18.2086 39.5403 18.2622C38.8513 18.8908 37.7952 19.116 36.7576 19.116C35.1321 19.116 33.5067 18.712 32.4416 "
+    },
+    {
+      "tag": "DIV",
+      "className": "c3ecdb44",
+      "attrs": {
+        "class": "c3ecdb44"
+      },
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 950
+      },
+      "textStart": "New chat\nToday\nBMW B37 Listing\nGMC Listing Page Generation\nBMW B37 Listing Page\nBMW B37 Listing Page\nBMW B37 Engine Listing\nBMW B37 Listing Page\nBMW B37 Engine Listing\nBMW N47 E81 Listing Page\nBMW N47 Listing Page\nN47 E81 118d listing\nBMW N47 Listing\nBMW N47 Listing Page\nIncomplete row flag\nBMW N47 Engine Listing Page\n7 Days\nSkipped Images\n30 days\nCitroën DV6 Listing Page\nCitroen DV6 Listing Page\nAudi EA189 Listing Page\nEA113 Audi A3 Listing\nGMC Listing Page Generation\nToyota Supra B58 Listings\n",
+      "htmlStart": "<div class=\"c3ecdb44\"><div class=\"dc04ec1d\"><div class=\"b8812f16 a2f3d50e\"><div class=\"_262baab\"><div class=\"e066abb8\"><svg width=\"143\" height=\"23\" viewBox=\"0 0 143 23\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M78.6785 18.6823H77.1078V16.2472H78.6785C79.6513 16.2472 80.6342 16.0047 81.2672 15.3308C81.9009 14.6569 82.14 13.6232 82.14 12.59C82.14 11.5569 81.9109 10.5231 81.2672 9.84981C80.6247 9.17594 79.6513 8.93343 78.6785 8.93343C77.7056 8.93343 76.7228 9.17594 76.0886 9.84981C75.4549 10.5237 75.2158 11.5569 75.2158 12.59V22.5909H72.4605V6.50781H75.2158V7.53204H75.7209C75.7757 7.4689 75.8304 7.41525 75.8857 7.36161C76.5752 6.73244 77.6308 6.50781 78.6684 6.50781C80.2944 6.50781 81.9193 6.91236 82.9849 8.03549C84.0499 9.15861 84.4265 10.8835 84.4265 12.6001C84.4265 14.3166 84.0404 16.0326 82.9849 17.1647C81.9288 18.2967 80.2944 18.6834 78.6785 18.6834V18.6823Z\" fill=\"var(--dsw-alias-brand-primary)\"></path><path d=\"M36.7486 6.94097H38.3188V9.37609H36.7486C35.7753 9.37609 34.7929 9.61859 34.1593 10.2925C33.5257 10.9663 33.2871 12.0001 33.2871 13.0332C33.2871 14.0664 33.5167 15.0996 34.1593 15.7734C34.8019 16.4473 35.7753 16.6898 36.7486 16.6898C37.722 16.6898 38.7049 16.4473 39.3385 15.7734C39.9722 15.0996 40.2108 14.0664 40.2108 13.0332V3.02344H42.9655V19.116H40.2108V18.0918H39.7057C39.6503 18.1544 39.5956 18.2086 39.5403 18.2622C38.8513 18.8908 37.7952 19.116 36.7576 19.116C35.1321 19.116 33.5067 18.712 32.4416 17.5889C31.3766 16.4658 31 14.7403 31 13.0243C31 1"
+    },
+    {
+      "tag": "DIV",
+      "className": "_7780f2e",
+      "attrs": {
+        "class": "_7780f2e"
+      },
+      "rect": {
+        "x": 261,
+        "y": 0,
+        "width": 1179,
+        "height": 950
+      },
+      "textStart": "BMW B37 Listing\nInstant\nprompt.md\nMD 10.83KB\nBMW B37\tUsed BMW B37 Engine — 1 Series F20 (116d) Hatchback 2015-2019\tB37 F20 116d Used\tb37/bmw-1-series-f20-116d-hatchback-2015\t1 Series Hatchback (F20) 2015-2019 — 116d (116 hp)\tLongitudinal-mounted B37D15 for the F20/F21 1 Series — the core RWD application for this engine.\tWill an F40 B37 fit my F20 1 Series? — No, F40 uses transverse mounting (B37C15) while F20 uses longitudinal (B37D15) — different sump, ancillaries, and mounts.\t£1,955\t£2,875\tB37",
+      "htmlStart": "<div class=\"_7780f2e\"><div class=\"_765a5cd\"><div class=\"_2be88ba\"><div class=\"f8d1e4c0 the-header\"><div class=\"_9fcbeda _7ee190f\"><div class=\"afa34042 e0a1edb7 e37a04e4 _5a50d80\" tabindex=\"0\" style=\"outline: none;\">BMW B37 Listing</div><div class=\"c03d486a\"><div class=\"ds-icon a1ac5b47\" style=\"font-size: 12px; width: 12px; height: 12px;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M13.6516 6.87891L6.85747 15.2114C6.60065 15.5263 6.09224 15.302 6.15178 14.9L6.8431 10.2324C6.87889 9.99077 6.69167 9.77378 6.44742 9.77378L2.65846 9.77378C2.32132 9.77378 2.1354 9.38229 2.34845 9.121L9.14256 0.788538C9.39938 0.473563 9.90779 0.697894 9.84825 1.09992L9.15693 5.76753C9.12114 6.00914 9.30836 6.22613 9.55261 6.22613L13.3416 6.22613C13.6787 6.22613 13.8646 6.61762 13.6516 6.87891Z\" fill=\"currentColor\"></path></svg></div><span class=\"_46a12ab\">Instant</span></div></div></div><div class=\"_1aa2651 the-header\"><div role=\"button\" class=\"ds-button ds-button--iconLabelPrimary ds-button--icon ds-button--capsule ds-button--xl ds-button--icon-relative-m\" tabindex=\"0\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon ds-button__icon--last-child\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.2027 4.90034V6.43655H2.79724V4.90034H17.2027Z\" fill=\"currentColor\"></path><path d=\"M10.9603 13.0634V14.5996H2.79724V13.0634H10.9603Z\" fill=\"currentColor\"></path></svg></di"
+    },
+    {
+      "tag": "DIV",
+      "className": "_765a5cd",
+      "attrs": {
+        "class": "_765a5cd"
+      },
+      "rect": {
+        "x": 261,
+        "y": 0,
+        "width": 1179,
+        "height": 950
+      },
+      "textStart": "BMW B37 Listing\nInstant\nprompt.md\nMD 10.83KB\nBMW B37\tUsed BMW B37 Engine — 1 Series F20 (116d) Hatchback 2015-2019\tB37 F20 116d Used\tb37/bmw-1-series-f20-116d-hatchback-2015\t1 Series Hatchback (F20) 2015-2019 — 116d (116 hp)\tLongitudinal-mounted B37D15 for the F20/F21 1 Series — the core RWD application for this engine.\tWill an F40 B37 fit my F20 1 Series? — No, F40 uses transverse mounting (B37C15) while F20 uses longitudinal (B37D15) — different sump, ancillaries, and mounts.\t£1,955\t£2,875\tB37",
+      "htmlStart": "<div class=\"_765a5cd\"><div class=\"_2be88ba\"><div class=\"f8d1e4c0 the-header\"><div class=\"_9fcbeda _7ee190f\"><div class=\"afa34042 e0a1edb7 e37a04e4 _5a50d80\" tabindex=\"0\" style=\"outline: none;\">BMW B37 Listing</div><div class=\"c03d486a\"><div class=\"ds-icon a1ac5b47\" style=\"font-size: 12px; width: 12px; height: 12px;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M13.6516 6.87891L6.85747 15.2114C6.60065 15.5263 6.09224 15.302 6.15178 14.9L6.8431 10.2324C6.87889 9.99077 6.69167 9.77378 6.44742 9.77378L2.65846 9.77378C2.32132 9.77378 2.1354 9.38229 2.34845 9.121L9.14256 0.788538C9.39938 0.473563 9.90779 0.697894 9.84825 1.09992L9.15693 5.76753C9.12114 6.00914 9.30836 6.22613 9.55261 6.22613L13.3416 6.22613C13.6787 6.22613 13.8646 6.61762 13.6516 6.87891Z\" fill=\"currentColor\"></path></svg></div><span class=\"_46a12ab\">Instant</span></div></div></div><div class=\"_1aa2651 the-header\"><div role=\"button\" class=\"ds-button ds-button--iconLabelPrimary ds-button--icon ds-button--capsule ds-button--xl ds-button--icon-relative-m\" tabindex=\"0\"><div class=\"ds-button__background\"></div><div class=\"ds-button__icon ds-button__icon--last-child\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.2027 4.90034V6.43655H2.79724V4.90034H17.2027Z\" fill=\"currentColor\"></path><path d=\"M10.9603 13.0634V14.5996H2.79724V13.0634H10.9603Z\" fill=\"currentColor\"></path></svg></div></div><div class=\"_9"
+    },
+    {
+      "tag": "DIV",
+      "className": "ds-virtual-list ds-virtual-list--printable ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _2bd7b35",
+      "attrs": {
+        "class": "ds-virtual-list ds-virtual-list--printable ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _2bd7b35",
+        "tabindex": "0",
+        "style": "display: flex; flex-direction: column; --container-height: 890px; --dsl-virtual-list-width: 1179px;"
+      },
+      "rect": {
+        "x": 261,
+        "y": 60,
+        "width": 1179,
+        "height": 890
+      },
+      "textStart": "prompt.md\nMD 10.83KB\nBMW B37\tUsed BMW B37 Engine — 1 Series F20 (116d) Hatchback 2015-2019\tB37 F20 116d Used\tb37/bmw-1-series-f20-116d-hatchback-2015\t1 Series Hatchback (F20) 2015-2019 — 116d (116 hp)\tLongitudinal-mounted B37D15 for the F20/F21 1 Series — the core RWD application for this engine.\tWill an F40 B37 fit my F20 1 Series? — No, F40 uses transverse mounting (B37C15) while F20 uses longitudinal (B37D15) — different sump, ancillaries, and mounts.\t£1,955\t£2,875\tB37-USED-F20-116D-HATCH\tGro",
+      "htmlStart": "<div class=\"ds-virtual-list ds-virtual-list--printable ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled _2bd7b35\" tabindex=\"0\" style=\"display: flex; flex-direction: column; --container-height: 890px; --dsl-virtual-list-width: 1179px;\"><div class=\"ds-scroll-area__gutters\" style=\"--container-height: 890px; position: sticky; top: 0px; left: 0px; right: 0px; width: 100%; height: 0px;\"><div class=\"ds-scroll-area__horizontal-gutter\" style=\"left: 3px; right: 3px; display: none; top: calc(var(--container-height) - 11px); height: 8px;\"><div class=\"ds-scroll-area__horizontal-bar\" style=\"display: none;\"></div></div><div class=\"ds-scroll-area__vertical-gutter\" style=\"right: 3px; top: 3px; bottom: calc(0px - var(--container-height) + 3px); width: 8px;\"><div class=\"ds-scroll-area__vertical-bar\" style=\"top: 392.735px; height: 94.8018px;\"></div></div></div><div class=\"ds-virtual-list-items _6f2c522\" style=\"box-sizing: content-box; padding-top: 0px; padding-left: calc((100% - var(--message-list-max-width)) / 2); padding-right: calc((100% - var(--message-list-max-width)) / 2); flex-shrink: 0; flex-grow: 1; min-height: 8123px;\"><div class=\"ds-virtual-list-visible-items\" style=\"position: relative; transform: translateY(0px); --dsl-virtual-list-transform-y: 0px; --dsl-virtual-list-ios-compensation-y: 0px;\"><div class=\"_9663006 _2c189bc\" data-virtual-list-item-key=\"-2\"><div class=\"d29f3d7d ds-message _63c77b1\" style=\"--panel-width: 0px;\"><div class=\"eafda4ae\" style=\"marg"
+    },
+    {
+      "tag": "DIV",
+      "className": "ds-virtual-list-items _6f2c522",
+      "attrs": {
+        "class": "ds-virtual-list-items _6f2c522",
+        "style": "box-sizing: content-box; padding-top: 0px; padding-left: calc((100% - var(--message-list-max-width)) / 2); padding-right: calc((100% - var(--message-list-max-width)) / 2); flex-shrink: 0; flex-grow: 1; min-height: 8123px;"
+      },
+      "rect": {
+        "x": 305,
+        "y": -3627,
+        "width": 1091,
+        "height": 8123
+      },
+      "textStart": "prompt.md\nMD 10.83KB\nBMW B37\tUsed BMW B37 Engine — 1 Series F20 (116d) Hatchback 2015-2019\tB37 F20 116d Used\tb37/bmw-1-series-f20-116d-hatchback-2015\t1 Series Hatchback (F20) 2015-2019 — 116d (116 hp)\tLongitudinal-mounted B37D15 for the F20/F21 1 Series — the core RWD application for this engine.\tWill an F40 B37 fit my F20 1 Series? — No, F40 uses transverse mounting (B37C15) while F20 uses longitudinal (B37D15) — different sump, ancillaries, and mounts.\t£1,955\t£2,875\tB37-USED-F20-116D-HATCH\tGro",
+      "htmlStart": "<div class=\"ds-virtual-list-items _6f2c522\" style=\"box-sizing: content-box; padding-top: 0px; padding-left: calc((100% - var(--message-list-max-width)) / 2); padding-right: calc((100% - var(--message-list-max-width)) / 2); flex-shrink: 0; flex-grow: 1; min-height: 8123px;\"><div class=\"ds-virtual-list-visible-items\" style=\"position: relative; transform: translateY(0px); --dsl-virtual-list-transform-y: 0px; --dsl-virtual-list-ios-compensation-y: 0px;\"><div class=\"_9663006 _2c189bc\" data-virtual-list-item-key=\"-2\"><div class=\"d29f3d7d ds-message _63c77b1\" style=\"--panel-width: 0px;\"><div class=\"eafda4ae\" style=\"margin-bottom: 0px; max-height: none; position: relative; overflow: visible; pointer-events: auto;\"><div tabindex=\"0\" class=\"_25c7358 dafb6286\"><div class=\"cd314545\"><div class=\"_1c3b90b\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"28\" height=\"28\" viewBox=\"0 0 28 28\" fill=\"none\"><path d=\"M8.48924 28H19.5108C21.6479 28 22.7165 28 23.5594 27.6509C24.6833 27.1853 25.5762 26.2924 26.0417 25.1685C26.3909 24.3256 26.3909 23.257 26.3909 21.1199V8.79443C26.3909 8.32877 26.3909 8.09593 26.3471 7.87507C26.2887 7.58058 26.173 7.30042 26.0067 7.05048C25.882 6.86303 25.7177 6.69799 25.3893 6.36792L20.0611 1.01354C19.7304 0.681235 19.5651 0.515081 19.3769 0.38885C19.126 0.220541 18.8443 0.103463 18.5481 0.0443412C18.3259 0 18.0915 0 17.6226 0H8.48924C6.35209 0 5.28351 0 4.4406 0.349145C3.31672 0.814671 2.4238 1.70759 1.95828 2.83147C1.60913 3.67438 1.60913 4.74296 1.60913 6.88011V21"
+    },
+    {
+      "tag": "DIV",
+      "className": "ds-virtual-list-visible-items",
+      "attrs": {
+        "class": "ds-virtual-list-visible-items",
+        "style": "position: relative; transform: translateY(0px); --dsl-virtual-list-transform-y: 0px; --dsl-virtual-list-ios-compensation-y: 0px;"
+      },
+      "rect": {
+        "x": 474.5,
+        "y": -3627,
+        "width": 752,
+        "height": 8123
+      },
+      "textStart": "prompt.md\nMD 10.83KB\nBMW B37\tUsed BMW B37 Engine — 1 Series F20 (116d) Hatchback 2015-2019\tB37 F20 116d Used\tb37/bmw-1-series-f20-116d-hatchback-2015\t1 Series Hatchback (F20) 2015-2019 — 116d (116 hp)\tLongitudinal-mounted B37D15 for the F20/F21 1 Series — the core RWD application for this engine.\tWill an F40 B37 fit my F20 1 Series? — No, F40 uses transverse mounting (B37C15) while F20 uses longitudinal (B37D15) — different sump, ancillaries, and mounts.\t£1,955\t£2,875\tB37-USED-F20-116D-HATCH\tGro",
+      "htmlStart": "<div class=\"ds-virtual-list-visible-items\" style=\"position: relative; transform: translateY(0px); --dsl-virtual-list-transform-y: 0px; --dsl-virtual-list-ios-compensation-y: 0px;\"><div class=\"_9663006 _2c189bc\" data-virtual-list-item-key=\"-2\"><div class=\"d29f3d7d ds-message _63c77b1\" style=\"--panel-width: 0px;\"><div class=\"eafda4ae\" style=\"margin-bottom: 0px; max-height: none; position: relative; overflow: visible; pointer-events: auto;\"><div tabindex=\"0\" class=\"_25c7358 dafb6286\"><div class=\"cd314545\"><div class=\"_1c3b90b\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"28\" height=\"28\" viewBox=\"0 0 28 28\" fill=\"none\"><path d=\"M8.48924 28H19.5108C21.6479 28 22.7165 28 23.5594 27.6509C24.6833 27.1853 25.5762 26.2924 26.0417 25.1685C26.3909 24.3256 26.3909 23.257 26.3909 21.1199V8.79443C26.3909 8.32877 26.3909 8.09593 26.3471 7.87507C26.2887 7.58058 26.173 7.30042 26.0067 7.05048C25.882 6.86303 25.7177 6.69799 25.3893 6.36792L20.0611 1.01354C19.7304 0.681235 19.5651 0.515081 19.3769 0.38885C19.126 0.220541 18.8443 0.103463 18.5481 0.0443412C18.3259 0 18.0915 0 17.6226 0H8.48924C6.35209 0 5.28351 0 4.4406 0.349145C3.31672 0.814671 2.4238 1.70759 1.95828 2.83147C1.60913 3.67438 1.60913 4.74296 1.60913 6.88011V21.1199C1.60913 23.257 1.60913 24.3256 1.95828 25.1685C2.4238 26.2924 3.31672 27.1853 4.4406 27.6509C5.28351 28 6.35209 28 8.48924 28Z\" fill=\"#418CFF\"></path><path d=\"M26.3909 7.37445L19.0525 0V3.77445C19.0525 4.89271 19.0525 5.45184 19.2352 5.89289C19.4788 6.48096 19.946 6.9"
+    },
+    {
+      "tag": "DIV",
+      "className": "_4f9bf79 d7dc56a8 _43c05b5",
+      "attrs": {
+        "class": "_4f9bf79 d7dc56a8 _43c05b5",
+        "data-virtual-list-item-key": "2"
+      },
+      "rect": {
+        "x": 474.5,
+        "y": -3281,
+        "width": 752,
+        "height": 7777
+      },
+      "textStart": "Thought for 3 seconds\n\nOkay, the user has provided a detailed prompt file and a specific row of data for a BMW B37 engine listing. The prompt is GMC-LISTING-v3, which is a single-pass process to generate a complete listing page with content and schema from one row of the Listing Schedule Table.\n\nI need to follow the output order strictly. First, I'll generate the Metas: the title, description, and canonical URL. The canonical slug is constructed from the primary code and group slug provided. I n",
+      "htmlStart": "<div class=\"_4f9bf79 d7dc56a8 _43c05b5\" data-virtual-list-item-key=\"2\"><div class=\"ds-message _63c77b1\" style=\"--panel-width: 0px;\"><div class=\"_74c0879\" style=\"--collapsible-area-title-height: 34px; --group-title-sticky-base-top: 0px; --group-title-sticky-top: calc(var(--group-title-sticky-base-top) - var(--dsl-virtual-list-transform-y) + var(--dsl-virtual-list-ios-compensation-y));\"><div class=\"_245c867 _34a54ec\"><div class=\"_5ab5d64\"><div class=\"ds-icon _970ac5e\" style=\"font-size: 16px; width: 16px; height: 16px;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8.00192 6.64454C8.75026 6.64454 9.35732 7.25169 9.35739 8.00001C9.35739 8.74838 8.7503 9.35548 8.00192 9.35548C7.25367 9.35533 6.64743 8.74829 6.64743 8.00001C6.6475 7.25178 7.25371 6.64468 8.00192 6.64454Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9.97165 1.29981C11.5853 0.718916 13.271 0.642197 14.3144 1.68555C15.3577 2.72902 15.2811 4.41466 14.7002 6.02833C14.4707 6.66561 14.1504 7.32937 13.75 8.00001C14.1504 8.67062 14.4707 9.33444 14.7002 9.97169C15.2811 11.5854 15.3578 13.271 14.3144 14.3145C13.271 15.3579 11.5854 15.2811 9.97165 14.7002C9.3344 14.4708 8.67059 14.1505 7.99997 13.75C7.32933 14.1505 6.66558 14.4708 6.02829 14.7002C4.41461 15.2811 2.72899 15.3578 1.68552 14.3145C0.642155 13.271 0.71887 11.5854 1.29977 9.97169C1.52915 9.33454 1.84865 8.67049 2.24899 8.00001C1.84866 7.32953 1.52915 6.66544 1.29977 6.02833C0"
+    },
+    {
+      "tag": "DIV",
+      "className": "ds-message _63c77b1",
+      "attrs": {
+        "class": "ds-message _63c77b1",
+        "style": "--panel-width: 0px;"
+      },
+      "rect": {
+        "x": 474.5,
+        "y": -3281,
+        "width": 752,
+        "height": 7727
+      },
+      "textStart": "Thought for 3 seconds\n\nOkay, the user has provided a detailed prompt file and a specific row of data for a BMW B37 engine listing. The prompt is GMC-LISTING-v3, which is a single-pass process to generate a complete listing page with content and schema from one row of the Listing Schedule Table.\n\nI need to follow the output order strictly. First, I'll generate the Metas: the title, description, and canonical URL. The canonical slug is constructed from the primary code and group slug provided. I n",
+      "htmlStart": "<div class=\"ds-message _63c77b1\" style=\"--panel-width: 0px;\"><div class=\"_74c0879\" style=\"--collapsible-area-title-height: 34px; --group-title-sticky-base-top: 0px; --group-title-sticky-top: calc(var(--group-title-sticky-base-top) - var(--dsl-virtual-list-transform-y) + var(--dsl-virtual-list-ios-compensation-y));\"><div class=\"_245c867 _34a54ec\"><div class=\"_5ab5d64\"><div class=\"ds-icon _970ac5e\" style=\"font-size: 16px; width: 16px; height: 16px;\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8.00192 6.64454C8.75026 6.64454 9.35732 7.25169 9.35739 8.00001C9.35739 8.74838 8.7503 9.35548 8.00192 9.35548C7.25367 9.35533 6.64743 8.74829 6.64743 8.00001C6.6475 7.25178 7.25371 6.64468 8.00192 6.64454Z\" fill=\"currentColor\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M9.97165 1.29981C11.5853 0.718916 13.271 0.642197 14.3144 1.68555C15.3577 2.72902 15.2811 4.41466 14.7002 6.02833C14.4707 6.66561 14.1504 7.32937 13.75 8.00001C14.1504 8.67062 14.4707 9.33444 14.7002 9.97169C15.2811 11.5854 15.3578 13.271 14.3144 14.3145C13.271 15.3579 11.5854 15.2811 9.97165 14.7002C9.3344 14.4708 8.67059 14.1505 7.99997 13.75C7.32933 14.1505 6.66558 14.4708 6.02829 14.7002C4.41461 15.2811 2.72899 15.3578 1.68552 14.3145C0.642155 13.271 0.71887 11.5854 1.29977 9.97169C1.52915 9.33454 1.84865 8.67049 2.24899 8.00001C1.84866 7.32953 1.52915 6.66544 1.29977 6.02833C0.718852 4.41459 0.64207 2.729 1.68552 1.68555C2.72897 0.642112 4.41456 "
+    },
+    {
+      "tag": "DIV",
+      "className": "ds-markdown ds-assistant-message-main-content",
+      "attrs": {
+        "class": "ds-markdown ds-assistant-message-main-content"
+      },
+      "rect": {
+        "x": 474.5,
+        "y": -2822,
+        "width": 752,
+        "height": 7268
+      },
+      "textStart": "BMW B37 Engine Listing Page\n1. METAS\n\nMETA_TITLE: Used BMW B37 Engine — 1 Series F20 116d 2015-2019 | Engined\n(60 characters exactly)\n\nMETA_DESC: BMW B37 · used · 1 Series F20 116d Hatchback · £1,955 · longitudinal B37D15 · 116 hp · tested · 12-month warranty · UK delivery\n(151 characters)\n\nCANONICAL: https://engined.co.uk/engines/b37/bmw-1-series-f20-116d-hatchback-2015/\n\nOG_TITLE: Used BMW B37 Engine — 1 Series F20 116d 2015-2019 | Engined\n\nOG_DESC: BMW B37 · used · 1 Series F20 116d Hatchback",
+      "htmlStart": "<div class=\"ds-markdown ds-assistant-message-main-content\"><h1><span class=\"\">BMW B37 Engine Listing Page</span></h1><h2><span class=\"\">1. METAS</span></h2><p class=\"ds-markdown-paragraph\"><strong><span class=\"\">META_TITLE:</span></strong><span class=\"\"> Used BMW B37 Engine — 1 Series F20 116d 2015-2019 | Engined</span><br><span class=\"\"></span><em><span class=\"\">(60 characters exactly)</span></em></p><p class=\"ds-markdown-paragraph\"><strong><span class=\"\">META_DESC:</span></strong><span class=\"\"> BMW B37 · used · 1 Series F20 116d Hatchback · £1,955 · longitudinal B37D15 · 116 hp · tested · 12-month warranty · UK delivery</span><br><span class=\"\"></span><em><span class=\"\">(151 characters)</span></em></p><p class=\"ds-markdown-paragraph\"><strong><span class=\"\">CANONICAL:</span></strong><span class=\"\"> </span><a href=\"https://engined.co.uk/engines/b37/bmw-1-series-f20-116d-hatchback-2015/\" target=\"_blank\" rel=\"noreferrer\"><span class=\"\">https://engined.co.uk/engines/b37/bmw-1-series-f20-116d-hatchback-2015/</span></a></p><p class=\"ds-markdown-paragraph\"><strong><span class=\"\">OG_TITLE:</span></strong><span class=\"\"> Used BMW B37 Engine — 1 Series F20 116d 2015-2019 | Engined</span></p><p class=\"ds-markdown-paragraph\"><strong><span class=\"\">OG_DESC:</span></strong><span class=\"\"> BMW B37 · used · 1 Series F20 116d Hatchback · £1,955 · longitudinal B37D15 · 116 hp · tested · 12-month warranty · UK delivery</span></p><p class=\"ds-markdown-paragraph\"><strong><span class=\"\">OG_IMAGE"
+    }
+  ]
+}

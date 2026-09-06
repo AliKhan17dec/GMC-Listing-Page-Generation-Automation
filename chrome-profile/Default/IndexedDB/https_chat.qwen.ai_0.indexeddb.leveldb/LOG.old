@@ -1,0 +1,17 @@
+2026/09/06-21:56:31.589 26f24 Reusing MANIFEST /Users/ammadkhan/coding/deepseek-automation/chrome-profile/Default/IndexedDB/https_chat.qwen.ai_0.indexeddb.leveldb/MANIFEST-000001
+2026/09/06-21:56:31.589 26f24 Recovering log #3
+2026/09/06-21:56:31.589 26f24 Reusing old log /Users/ammadkhan/coding/deepseek-automation/chrome-profile/Default/IndexedDB/https_chat.qwen.ai_0.indexeddb.leveldb/000003.log 
+2026/09/06-21:56:40.264 26f0b Level-0 table #5: started
+2026/09/06-21:56:40.361 26f0b Level-0 table #5: 234558 bytes OK
+2026/09/06-21:56:40.436 26f0b Delete type=0 #3
+2026/09/06-21:56:42.284 26f0b Level-0 table #7: started
+2026/09/06-21:56:42.323 26f0b Level-0 table #7: 199690 bytes OK
+2026/09/06-21:56:42.367 26f0b Delete type=0 #4
+2026/09/06-21:56:42.386 26f0b Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/09/06-21:56:42.386 26f0b Manual compaction at level-1 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at '\x00\x02\x01\x02\x03\x00\x00\x00\x00\x00\x00,@' @ 1697 : 1
+2026/09/06-21:56:42.386 26f0b Compacting 1@1 + 1@2 files
+2026/09/06-21:56:42.430 26f0b Generated table #8@1: 19 keys, 537 bytes
+2026/09/06-21:56:42.431 26f0b Compacted 1@1 + 1@2 files => 537 bytes
+2026/09/06-21:56:42.464 26f0b compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/09/06-21:56:42.465 26f0b Delete type=2 #7
+2026/09/06-21:56:42.473 26f0b Manual compaction at level-1 from '\x00\x02\x01\x02\x03\x00\x00\x00\x00\x00\x00,@' @ 1697 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
