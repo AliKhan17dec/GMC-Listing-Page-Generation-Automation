@@ -574,6 +574,24 @@ async function findAnswerBox(page, row) {
 
 async function scrollAnswerBottomIntoView(page, row) {
   for (let attempt = 0; attempt < 20; attempt += 1) {
+    await page.evaluate(() => {
+      const scrollables = Array.from(document.querySelectorAll("*")).filter((element) => {
+        const style = window.getComputedStyle(element);
+        return (
+          element.scrollHeight > element.clientHeight + 50 &&
+          /(auto|scroll)/.test(`${style.overflowY} ${style.overflow}`)
+        );
+      });
+
+      for (const element of scrollables) {
+        element.scrollTop = element.scrollHeight;
+      }
+
+      window.scrollTo(0, document.documentElement.scrollHeight);
+    });
+    await page.keyboard.press("End").catch(() => {});
+    await page.waitForTimeout(500);
+
     const box = await findAnswerBox(page, row);
     if (!box) {
       await page.waitForTimeout(500);
@@ -584,6 +602,7 @@ async function scrollAnswerBottomIntoView(page, row) {
     if (box.y + box.height > 120 && box.y + box.height < viewportHeight - 120) return;
 
     const delta = Math.max(500, box.y + box.height - viewportHeight + 220);
+    await page.mouse.move(Math.max(300, box.x + box.width / 2), Math.min(viewportHeight - 100, 700));
     await page.mouse.wheel(0, delta);
     await page.waitForTimeout(500);
   }
