@@ -409,7 +409,7 @@ async function writeClipboard(page, text) {
 function isUsableMarkdownAnswer(text, row) {
   const value = String(text || "");
   const lower = value.toLowerCase();
-  const expectedTokens = [row.SKU, row["URL Slug"], row["Listing Title"]].filter(Boolean);
+  const engineName = row["Engine Name"] || "";
 
   return (
     value.length > 1000 &&
@@ -417,7 +417,7 @@ function isUsableMarkdownAnswer(text, row) {
     value.includes("CANONICAL") &&
     lower.includes("json-ld") &&
     lower.includes("validation checklist") &&
-    expectedTokens.some((token) => value.includes(token)) &&
+    (!engineName || value.toLowerCase().includes(engineName.toLowerCase().replace(/^bmw\s+/, ""))) &&
     hasMarkdownMarkers(value)
   );
 }
@@ -536,8 +536,7 @@ async function copyNewestAnswerMarkdown(page, row) {
 }
 
 async function findAnswerBox(page, row) {
-  return page.evaluate((rowData) => {
-    const expectedTokens = [rowData.SKU, rowData["URL Slug"], rowData["Listing Title"]].filter(Boolean);
+  return page.evaluate(() => {
     const visible = (element) => {
       const style = window.getComputedStyle(element);
       const rect = element.getBoundingClientRect();
@@ -547,8 +546,8 @@ async function findAnswerBox(page, row) {
       text.length > 1000 &&
       text.includes("META_TITLE") &&
       text.includes("CANONICAL") &&
-      /validation checklist/i.test(text) &&
-      expectedTokens.some((token) => text.includes(token));
+      /json-ld/i.test(text) &&
+      /validation checklist/i.test(text);
 
     const elements = Array.from(document.body.querySelectorAll("*")).filter(visible);
     const matches = elements
@@ -615,7 +614,6 @@ async function writeCopyDebug(page, row) {
   const base = path.join(debugDir, `copy-fail-${stamp}`);
 
   const info = await page.evaluate((rowData) => {
-    const expectedTokens = [rowData.SKU, rowData["URL Slug"], rowData["Listing Title"]].filter(Boolean);
     const visible = (element) => {
       const style = window.getComputedStyle(element);
       const rect = element.getBoundingClientRect();
@@ -650,8 +648,8 @@ async function writeCopyDebug(page, row) {
           text.length > 1000 &&
           text.includes("META_TITLE") &&
           text.includes("CANONICAL") &&
-          /validation checklist/i.test(text) &&
-          expectedTokens.some((token) => text.includes(token));
+          /json-ld/i.test(text) &&
+          /validation checklist/i.test(text);
         if (!hasAnswer) return null;
 
         const rect = element.getBoundingClientRect();
