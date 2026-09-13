@@ -7,6 +7,7 @@ const DEFAULTS = {
   prompt: "prompt.md",
   output: "output",
   profile: "chrome-profile",
+  profileDirectory: "Default",
   executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
   url: "https://chat.deepseek.com/",
   headless: false,
@@ -15,6 +16,7 @@ const DEFAULTS = {
   force: false,
   delayMs: 1500,
   uploadWaitMs: 8000,
+  gotoTimeoutMs: 60 * 1000,
   responseTimeoutMs: 10 * 60 * 1000,
   stableMs: 8000,
 };
@@ -30,12 +32,14 @@ function parseArgs(argv) {
     else if (arg === "--prompt") config.prompt = next();
     else if (arg === "--output") config.output = next();
     else if (arg === "--profile") config.profile = next();
+    else if (arg === "--profile-directory") config.profileDirectory = next();
     else if (arg === "--executable-path") config.executablePath = next();
     else if (arg === "--url") config.url = next();
     else if (arg === "--start") config.start = Number(next());
     else if (arg === "--limit") config.limit = Number(next());
     else if (arg === "--delay-ms") config.delayMs = Number(next());
     else if (arg === "--upload-wait-ms") config.uploadWaitMs = Number(next());
+    else if (arg === "--goto-timeout-ms") config.gotoTimeoutMs = Number(next());
     else if (arg === "--response-timeout-ms") config.responseTimeoutMs = Number(next());
     else if (arg === "--stable-ms") config.stableMs = Number(next());
     else if (arg === "--force") config.force = true;
@@ -67,13 +71,15 @@ Options:
   --input <file>                  Listing table file. Default: listings.csv
   --prompt <file>                 Prompt markdown file. Default: prompt.md
   --output <dir>                  Output directory. Default: output
-  --profile <dir>                 Browser profile directory. Default: chrome-profile
+  --profile <dir>                 Persistent automation profile. Default: chrome-profile
+  --profile-directory <name>      Profile inside user data dir. Default: Default
   --executable-path <file>        Browser app executable. Default: Google Chrome on macOS
   --start <n>                     Start at zero-based row index. Default: 0
   --limit <n>                     Process only n rows. Useful for testing.
   --force                         Re-run rows even if output files already exist.
   --delay-ms <n>                  Pause after each saved row. Default: 1500
   --upload-wait-ms <n>            Wait after attaching prompt.md. Default: 8000
+  --goto-timeout-ms <n>           Max wait while opening DeepSeek. Default: 60000
   --response-timeout-ms <n>       Max wait for one DeepSeek answer. Default: 600000
   --stable-ms <n>                 Text must stop changing for this long. Default: 8000
   --headless                      Run browser without showing it.
@@ -169,8 +175,7 @@ function looksCompleteOutput(filePath) {
     text.length > 1000 &&
     text.includes("META_TITLE:") &&
     text.includes("CANONICAL:") &&
-    text.toLowerCase().includes("json-ld") &&
-    text.toLowerCase().includes("validation checklist")
+    text.toLowerCase().includes("json-ld")
   );
 }
 
@@ -181,10 +186,6 @@ function cleanAnswerText(answer) {
     .join("\n")
     .replace(/\n{3,}/g, "\n\n")
     .trim();
-}
-
-function hasMarkdownMarkers(text) {
-  return /(^|\n)#{1,6}\s/.test(text) || /(^|\n)```/.test(text) || /\*\*[^*]+:\*\*/.test(text);
 }
 
 async function visibleLocator(page, selectors, timeout = 5000) {
@@ -306,13 +307,16 @@ async function attachPromptFile(page, promptPath, uploadWaitMs) {
 
 async function candidateAnswerTexts(page) {
   return page.evaluate(() => {
-    const markers = ["META_TITLE:", "CANONICAL:", "validation checklist"];
+    const markers = ["META_TITLE", "CANONICAL"];
     const visible = (element) => {
       const style = window.getComputedStyle(element);
       const rect = element.getBoundingClientRect();
       return style.visibility !== "hidden" && style.display !== "none" && rect.width > 0 && rect.height > 0;
     };
-    const hasMarkers = (text) => markers.every((marker) => text.toLowerCase().includes(marker.toLowerCase()));
+    const hasMarkers = (text) => {
+      const lower = text.toLowerCase();
+      return markers.every((marker) => lower.includes(marker.toLowerCase())) && lower.includes("json-ld");
+    };
     const elements = Array.from(document.body.querySelectorAll("*")).filter(visible);
     const candidates = [];
 
@@ -368,10 +372,6 @@ async function lastAnswerText(page) {
   return texts[texts.length - 1] || "";
 }
 
-function documentTextHint(text) {
-  return String(text || "").slice(-5000);
-}
-
 async function waitForAnswer(page, beforeText, timeoutMs, stableMs) {
   const deadline = Date.now() + timeoutMs;
   let lastText = "";
@@ -385,9 +385,12 @@ async function waitForAnswer(page, beforeText, timeoutMs, stableMs) {
       lastChangedAt = Date.now();
     }
 
-    const lower = documentTextHint(text).toLowerCase();
-    const hasValidation = lower.includes("validation checklist") || lower.includes("json-ld schema");
-    if (lastText.length > 1000 && hasValidation && Date.now() - lastChangedAt >= stableMs) {
+    const lower = String(text || "").toLowerCase();
+    const hasOutputShape =
+      lower.includes("meta_title") &&
+      lower.includes("canonical") &&
+      (lower.includes("json-ld") || lower.includes("json ld"));
+    if (lastText.length > 1000 && hasOutputShape && Date.now() - lastChangedAt >= stableMs) {
       return lastText;
     }
 
@@ -415,11 +418,98 @@ function isUsableMarkdownAnswer(text, row) {
     value.length > 1000 &&
     value.includes("META_TITLE") &&
     value.includes("CANONICAL") &&
-    lower.includes("json-ld") &&
-    lower.includes("validation checklist") &&
-    (!engineName || value.toLowerCase().includes(engineName.toLowerCase().replace(/^bmw\s+/, ""))) &&
-    hasMarkdownMarkers(value)
+    (lower.includes("json-ld") || lower.includes("json ld")) &&
+    (!engineName || value.toLowerCase().includes(engineName.toLowerCase().replace(/^bmw\s+/, "")))
   );
+}
+
+async function clickCopyCandidate(page, buttonIndex, clipboardMarker, row, label) {
+  const buttons = await page.locator('button, [role="button"]').elementHandles();
+  const button = buttons[buttonIndex];
+  if (!button) return "";
+
+  await button.scrollIntoViewIfNeeded().catch(() => {});
+  await page.waitForTimeout(300);
+  await button.click({ force: true }).catch(() => {});
+  await page.waitForTimeout(900);
+
+  const copied = await readClipboard(page).catch(() => "");
+  if (copied && copied !== clipboardMarker && isUsableMarkdownAnswer(copied, row)) {
+    console.log(`[copy] ${label}`);
+    return copied.trim();
+  }
+
+  return "";
+}
+
+async function copyNewestAssistantMessageAction(page, row, clipboardMarker) {
+  const candidates = await page.locator('button, [role="button"]').evaluateAll((buttons) => {
+    const visible = (element) => {
+      const style = window.getComputedStyle(element);
+      const rect = element.getBoundingClientRect();
+      return style.visibility !== "hidden" && style.display !== "none" && rect.width > 0 && rect.height > 0;
+    };
+    const answerShape = (text) => {
+      const lower = String(text || "").toLowerCase();
+      return (
+        lower.length > 1000 &&
+        lower.includes("meta_title") &&
+        lower.includes("canonical") &&
+        (lower.includes("json-ld") || lower.includes("json ld"))
+      );
+    };
+    const messageSelector = '[data-virtual-list-item-key], .ds-message, [data-message-author-role="assistant"]';
+    const messageElements = Array.from(document.querySelectorAll(messageSelector))
+      .filter(visible)
+      .filter((element) => answerShape(element.innerText || element.textContent || ""))
+      .map((element) => {
+        const rect = element.getBoundingClientRect();
+        return { element, rect, area: rect.width * rect.height };
+      })
+      .filter((item) => item.rect.width > 300 && item.rect.height > 200)
+      .sort((a, b) => a.rect.bottom - b.rect.bottom || a.area - b.area);
+
+    const message = messageElements[messageElements.length - 1];
+    if (!message) return [];
+
+    const allButtons = Array.from(buttons);
+    return allButtons
+      .map((button, index) => {
+        if (!visible(button) || !message.element.contains(button)) return null;
+
+        const text = (button.innerText || button.textContent || "").trim();
+        const label = button.getAttribute("aria-label") || button.getAttribute("title") || "";
+        const className = button.className || "";
+        const rect = button.getBoundingClientRect();
+        const isCodeBlockButton = Boolean(button.closest(".md-code-block, pre, code"));
+        const isIconAction = !text && !label && /ds-button--icon/.test(className);
+        const isNearMessageBottom = rect.top >= message.rect.bottom - 160 && rect.top <= message.rect.bottom + 120;
+
+        if (!isIconAction || isCodeBlockButton || !isNearMessageBottom) return null;
+
+        return {
+          index,
+          left: rect.left,
+          top: rect.top,
+          messageBottom: message.rect.bottom,
+        };
+      })
+      .filter(Boolean)
+      .sort((a, b) => a.top - b.top || a.left - b.left);
+  });
+
+  for (const candidate of candidates) {
+    const copied = await clickCopyCandidate(
+      page,
+      candidate.index,
+      clipboardMarker,
+      row,
+      `Used DeepSeek bottom message Copy button at x=${Math.round(candidate.left)}`
+    );
+    if (copied) return copied;
+  }
+
+  return "";
 }
 
 async function copyNewestAnswerMarkdown(page, row) {
@@ -427,6 +517,9 @@ async function copyNewestAnswerMarkdown(page, row) {
   await writeClipboard(page, clipboardMarker).catch(() => {});
 
   await scrollAnswerBottomIntoView(page, row);
+
+  const copiedFromMessageAction = await copyNewestAssistantMessageAction(page, row, clipboardMarker);
+  if (copiedFromMessageAction) return copiedFromMessageAction;
 
   const answerBox = await findAnswerBox(page, row);
 
@@ -439,6 +532,49 @@ async function copyNewestAnswerMarkdown(page, row) {
     Math.max(20, Math.min(answerBox.y + answerBox.height - 20, 900))
   );
   await page.waitForTimeout(800);
+
+  const iconActionCandidates = await page.locator('button, [role="button"]').evaluateAll((elements, box) => {
+    const visible = (element) => {
+      const style = window.getComputedStyle(element);
+      const rect = element.getBoundingClientRect();
+      return style.visibility !== "hidden" && style.display !== "none" && rect.width > 0 && rect.height > 0;
+    };
+
+    return elements
+      .map((element, index) => {
+        if (!visible(element)) return null;
+
+        const text = (element.innerText || element.textContent || "").trim();
+        const label = element.getAttribute("aria-label") || element.getAttribute("title") || "";
+        const className = element.className || "";
+        const rect = element.getBoundingClientRect();
+        const isBottomAction =
+          !text &&
+          !label &&
+          /ds-button--icon/.test(className) &&
+          rect.top >= box.y + box.height - 120 &&
+          rect.top <= box.y + box.height + 220 &&
+          rect.left >= box.x - 30 &&
+          rect.left <= box.x + 260;
+
+        if (!isBottomAction) return null;
+
+        return { index, text, label, className, top: rect.top, left: rect.left };
+      })
+      .filter(Boolean)
+      .sort((a, b) => a.top - b.top || a.left - b.left);
+  }, answerBox);
+
+  for (const button of iconActionCandidates) {
+    const copied = await clickCopyCandidate(
+      page,
+      button.index,
+      clipboardMarker,
+      row,
+      `Used DeepSeek full message action button at x=${Math.round(button.left)}`
+    );
+    if (copied) return copied;
+  }
 
   const candidates = await page.locator('button, [role="button"]').evaluateAll((elements, box) => {
     const visible = (element) => {
@@ -474,19 +610,17 @@ async function copyNewestAnswerMarkdown(page, row) {
   }, answerBox);
 
   for (const button of candidates) {
-    const locator = page.locator('button, [role="button"]').nth(button.index);
-    await locator.scrollIntoViewIfNeeded().catch(() => {});
-    await locator.click({ force: true }).catch(() => {});
-    await page.waitForTimeout(800);
-
-    const copied = await readClipboard(page).catch(() => "");
-    if (copied && copied !== clipboardMarker && isUsableMarkdownAnswer(copied, row)) {
-      console.log(`[copy] Used DeepSeek copy button: ${button.label || button.text || "Copy"}`);
-      return copied.trim();
-    }
+    const copied = await clickCopyCandidate(
+      page,
+      button.index,
+      clipboardMarker,
+      row,
+      `Used DeepSeek copy button: ${button.label || button.text || "Copy"}`
+    );
+    if (copied) return copied;
   }
 
-  const iconActionCandidates = await page.locator('button, [role="button"]').evaluateAll((elements, box) => {
+  const visibleIconActionCandidates = await page.locator('button, [role="button"]').evaluateAll((elements, box) => {
     const visible = (element) => {
       const style = window.getComputedStyle(element);
       const rect = element.getBoundingClientRect();
@@ -519,17 +653,15 @@ async function copyNewestAnswerMarkdown(page, row) {
       .sort((a, b) => a.top - b.top || a.left - b.left);
   }, answerBox);
 
-  for (const button of iconActionCandidates) {
-    const locator = page.locator('button, [role="button"]').nth(button.index);
-    await locator.scrollIntoViewIfNeeded().catch(() => {});
-    await locator.click({ force: true }).catch(() => {});
-    await page.waitForTimeout(800);
-
-    const copied = await readClipboard(page).catch(() => "");
-    if (copied && copied !== clipboardMarker && isUsableMarkdownAnswer(copied, row)) {
-      console.log(`[copy] Used DeepSeek message action button at x=${Math.round(button.left)}`);
-      return copied.trim();
-    }
+  for (const button of visibleIconActionCandidates) {
+    const copied = await clickCopyCandidate(
+      page,
+      button.index,
+      clipboardMarker,
+      row,
+      `Used DeepSeek message action button at x=${Math.round(button.left)}`
+    );
+    if (copied) return copied;
   }
 
   return "";
@@ -546,8 +678,7 @@ async function findAnswerBox(page, row) {
       text.length > 1000 &&
       text.includes("META_TITLE") &&
       text.includes("CANONICAL") &&
-      /json-ld/i.test(text) &&
-      /validation checklist/i.test(text);
+      /json-ld/i.test(text);
 
     const elements = Array.from(document.body.querySelectorAll("*")).filter(visible);
     const matches = elements
@@ -648,8 +779,7 @@ async function writeCopyDebug(page, row) {
           text.length > 1000 &&
           text.includes("META_TITLE") &&
           text.includes("CANONICAL") &&
-          /json-ld/i.test(text) &&
-          /validation checklist/i.test(text);
+          /json-ld/i.test(text);
         if (!hasAnswer) return null;
 
         const rect = element.getBoundingClientRect();
@@ -695,9 +825,56 @@ async function getAnswerMarkdown(page, beforeText, timeoutMs, stableMs, row) {
   );
 }
 
-async function newChat(page, url) {
-  await page.goto(url, { waitUntil: "domcontentloaded" });
+async function newChat(page, url, gotoTimeoutMs) {
+  console.log(`[nav] Opening ${url}`);
+  await page.bringToFront().catch(() => {});
+  await page.goto(url, { waitUntil: "domcontentloaded", timeout: gotoTimeoutMs });
+  await page.bringToFront().catch(() => {});
+  console.log(`[nav] Current page: ${page.url()}`);
+  console.log("[wait] Waiting for DeepSeek chat box...");
   await waitForComposer(page);
+}
+
+async function launchChromeContext(config, profileDir) {
+  try {
+    console.log("[browser] Launching a normal Chrome window with the persistent automation profile...");
+    const context = await chromium.launchPersistentContext(profileDir, {
+      executablePath: fs.existsSync(config.executablePath) ? config.executablePath : undefined,
+      headless: config.headless,
+      viewport: { width: 1440, height: 950 },
+      permissions: ["clipboard-read", "clipboard-write"],
+      args: [`--profile-directory=${config.profileDirectory}`],
+    });
+    console.log("[browser] Chrome launched under Playwright control.");
+    return context;
+  } catch (error) {
+    const message = String(error.message || error);
+
+    if (message.includes("Opening in existing browser session")) {
+      throw new Error(
+        [
+          `Chrome profile is already open: ${profileDir} (${config.profileDirectory})`,
+          "",
+          "Close the Chrome window previously opened by this script, then run npm start again.",
+          "Your regular Chrome windows can remain open because they use a different profile folder.",
+          "",
+          "Chrome permits only one running process for this persistent automation profile.",
+        ].join("\n")
+      );
+    }
+
+    if (message.includes("DevTools remote debugging requires a non-default data directory")) {
+      throw new Error(
+        [
+          "Google Chrome no longer allows Playwright to automate your main Chrome user-data directory.",
+          "Run npm start without --profile so the script uses its persistent chrome-profile folder.",
+          "Log in to DeepSeek once in that window; the login will be retained for later runs.",
+        ].join("\n")
+      );
+    }
+
+    throw error;
+  }
 }
 
 async function main() {
@@ -712,19 +889,14 @@ async function main() {
   console.log(`Loaded ${table.rows.length} rows from ${config.input}.`);
   console.log(`Processing ${selectedRows.length} row(s), starting at row index ${config.start}.`);
   console.log(`Saving markdown files to ${outputDir}.`);
+  console.log(`Using persistent Chrome profile: ${profileDir} (${config.profileDirectory})`);
 
-  const context = await chromium.launchPersistentContext(profileDir, {
-    executablePath: fs.existsSync(config.executablePath) ? config.executablePath : undefined,
-    headless: config.headless,
-    viewport: { width: 1440, height: 950 },
-    permissions: ["clipboard-read", "clipboard-write"],
-    args: ["--disable-blink-features=AutomationControlled"],
-  });
+  const context = await launchChromeContext(config, profileDir);
 
-  const page = context.pages()[0] || (await context.newPage());
+  const page = await context.newPage();
 
   try {
-    await newChat(page, config.url);
+    await newChat(page, config.url, config.gotoTimeoutMs);
     console.log("DeepSeek is open. Log in in the browser if needed; the script will continue when the chat box is available.");
     await attachPromptFile(page, promptPath, config.uploadWaitMs);
 
